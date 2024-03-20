@@ -67,7 +67,7 @@ def register():
 
 @app.route("/update", methods=["GET","POST"])
 def update():
-    if 'uid' in session:
+    if 'LoggedIn' in session:
 
         userid = session['uid']
         NewPassword=request.form.get('new_pass')
