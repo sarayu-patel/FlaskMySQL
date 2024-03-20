@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update User</title>
+</head>
+<body>
+    <h1>Update User</h1>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <form action="/update" method="POST">
+        <label for="uid">userid:</label><br>
+        <input type="number" id="uid" name="uid" required> <br>
+        <label for="new_pass">NewPassword:</label><br>
+        <input type="password" name="new_pass"  placeholder="enter the new password"><br>
+        <input type="submit" value="update">
+    </form>
+</body>
+</html>
