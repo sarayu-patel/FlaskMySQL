@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+</head>
+<body>
+<h1>welcome to login page</h1>
+ <a href="/register"></a>
+<form action="{{url_for('login')}}" method="POST">
+    <table border="2">
+        <tr>
+            <th>UserId</th>
+            <td><input type="number" name="uid"></td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td><input type="text" name="pass"></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"><input type="submit" name="Register"></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
