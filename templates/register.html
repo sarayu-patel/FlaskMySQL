@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register page</title>
+</head>
+<body>
+<center>
+    <h1>welcome to registration page</h1>
+    <p>{{msg}}</p>
+    <form action="{{url_for ('register')}}" method="POST">
+        <a href="/update"></a>
+    <table border="1">
+        <tr>
+            <th>userid</th>
+            <td><input type="number" name="uid"></td>
+        </tr>
+        <tr>
+            <th>password</th>
+            <td><input type="password" name="pass"></td>
+        </tr>
+        <tr>
+            <th>fullname</th>
+            <td><input type="text" name="fn"></td>
+        </tr>
+        <tr>
+            <th>email</th>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <th>gender</th>
+            <td><input type="radio" name="gn" value="Male"> Male
+            <input type="radio" name="gn" value="Female"> Female</td>
+        </tr>
+        <tr align="center">
+           <td colspan="2"><input type="submit" value="register"></td>
+        </tr>
+    </table>
+        </form>
+</center>
+</body>
+</html>
